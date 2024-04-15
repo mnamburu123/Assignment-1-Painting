@@ -1,0 +1,51 @@
+<!-- Manogna Namburu
+mnamburu@ucsc.edu -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Change a point color</title>
+  </head>
+
+  <body onload="main()">
+    <canvas id="webgl" width="400" height="400">
+    Please use a browser that supports "canvas"
+    </canvas>
+    <img src="../src/OriginalDrawing.jpeg" alt="My Oringial" width="300" height="200">
+    <br><br> 
+    <input class="styled" type="button" id = "clear" value="Clear Canvas" />
+    <input class="styled" type="button" id = "Undo" value="Undo" />
+    <br><br> 
+    <input class="styled" type="button" id = "red" value="Red" />
+    <input class="styled" type="button" id = "green" value="Green" />
+    <br><br>
+    Drawing Mode:
+    <br><br>
+    <input class="styled" type="button" id = "point" value="Point" />
+    <input class="styled" type="button" id = "triangle" value="Triangle" />
+    <input class="styled" type="button" id = "circle" value="Circle" />
+    <br><br>
+    Shape Color:
+    <p> 
+    Red <input type="range" min="0" max="100" value="100" class="slider" id="redSlider"/>
+    Green <input type="range" min="0" max="100" value="0" class="slider" id="greenSlider"/>
+    Blue <input type="range" min="0" max="100" value="0" class="slider" id="blueSlider"/>
+    <p> 
+    Shape Size <input type="range" min="5" max="40" value="0" class="slider" id="sizeSlider"/>
+    (Circles) Segement Count<input type="range" min="5" max="100" value="0" class="slider" id="segment"/>
+    <p> 
+    <input class="styled" type="button" id = "Mypic" value="Mypic" />
+        
+
+    <script src="../lib/webgl-utils.js"></script>
+    <script src="../lib/webgl-debug.js"></script>
+    <script src="../lib/cuon-utils.js"></script>
+    <script src="../src/ColoredPoints.js"></script>
+    <script src="../src/Point.js"></script>
+    <script src="../src/Triangle.js"></script>
+    <script src="../src/Circle.js"></script>
+    <script src="../src/Mypic.js"></script>
+    <script src="../src/MyTriangle.js"></script>
+    
+  </body>
+</html>
